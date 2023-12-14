@@ -1,14 +1,14 @@
-import data from '../data.js'
+import data from "../data.js";
 
 const HomeScreen = {
   render: () => {
-    const {products} = data;
-    if (products === 'undefined') return null;
-    else{
-    return  `<ul class="products">
-            ${products.map(
-                
-              product => `<li>
+    const { products } = data;
+    if (products === "undefined") return null;
+    else {
+      return `<ul class="products">
+            ${products
+              .map(
+                (product) => `<li>
                     <div class="product">
                         <a href="/#/product/${product._id}">
                             <img src="${product.image}" alt="${product.name}" />
@@ -25,8 +25,10 @@ const HomeScreen = {
                     </div>
                 </li>
                 `
-            ).join('\n')}
-            </ul>`};
+              )
+              .join("\n")}
+            </ul>`;
+    }
   },
 };
 
