@@ -21,4 +21,26 @@
 
 <br/>
 
-# ****Create static home screen****
+# ****III. Create static home screen****
+### 1. create ul.products
+### 2. create li
+### 3. create div.product
+### 4. add .product-image, product-brand, product-name, product-price
+### 5. style ul.products and inner divs
+### 6. duplicate 2 items to show 3 products
+
+<br/>
+
+# ****IV. Render dynamic home screen****
+### 1. create data.js
+### 2. export an array of 6 products
+### 3. create screen/homeScreen.js
+### 4. export homeScreen with rendor() ###    method and implement it
+### 5. import data.js
+### 6. return products mapped to lis inside ul
+### 7. create app.js
+### 8. link it to index.html as module
+### 9. set main id to main_container
+### 10. create router() function
+### 11. set main_container innerHTML to homeScreen.js 
+### 12. set load event of window to router() function
