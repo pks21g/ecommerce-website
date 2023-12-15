@@ -59,6 +59,7 @@
 ### 9. if route exixts render it, else render error 404
 ### 10. create screens/Error404.js and render error message
 
+<br/>
 
 # ****VI Create Node.js  Server, #nodeproject****
 ### 1. create backend folder
@@ -71,3 +72,12 @@
 ### 8. create route for /api/products
 ### 9. return products in data.js
 ### 10. run npm start
+
+<br>
+
+# ****VII Load Products from backend****
+### 1. edit HomeScreen.js
+### 2. make render async
+### 3. fetch product from '/api/products' in render() 
+### 4. make router async and call await HomeScreen.render()
+### 5. use cors on backend
