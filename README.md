@@ -81,3 +81,16 @@
 ### 3. fetch product from '/api/products' in render() 
 ### 4. make router async and call await HomeScreen.render()
 ### 5. use cors on backend
+
+<br>
+
+# ****Add webpack****
+### 1. cd into frontend 
+### 2. npm install -D webpack webpack-dev-server webpack-cli
+### 3. uninstall live-server from frontend
+### 4. add "start": "webpack-dev-server --mode development --watch-content-base --opne" to package.json of frontend
+### 5. move index.html style.css images to frontend
+### 6. rename app.js to index.js
+### 7. update index.js with script src main.js
+### 8. install axios to frontend 
+### 9. change fetch to axios in homescreen

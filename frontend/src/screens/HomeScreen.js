@@ -1,15 +1,17 @@
+import axios from 'axios';
 const HomeScreen = {
   render: async () => {
 
-    const respose = await fetch("http://localhost:5000/api/products", {
+    const respose = await axios({
+      url: "http://localhost:5000/api/products", 
       headers: { "Content-Type": "application/json" },
     });
-    if (!respose || !respose.ok){
+    if (!respose || respose.statusText !== 'OK'){
       return `<div>
             Error in getting data
         </div>`;
     }
-    const products = await respose.json();
+    const products = respose.data;
     if (products === "undefined") return null;
     else {
       return `<ul class="products">
