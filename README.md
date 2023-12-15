@@ -44,3 +44,30 @@
 ### 10. create router() function
 ### 11. set main_container innerHTML to homeScreen.js 
 ### 12. set load event of window to router() function
+
+<br>
+
+# ****V Build URL Router****
+### 1. crete route as route:screen object for home screen
+### 2. create util.js
+### 3. export parseRequestURL
+### 4.set url as hash address split by slash
+### 5. return resource, id and verb of url
+### 6. update router
+### 7. set request as parseRequestURL()
+### 8. build parsedUrl and compare with routes 
+### 9. if route exixts render it, else render error 404
+### 10. create screens/Error404.js and render error message
+
+
+# ****VI Create Node.js  Server, #nodeproject****
+### 1. create backend folder
+### 2. run npm init in root folder
+### 3. npm install express
+### 4. create server.js
+### 5. add start commnad as node backend/server.js
+### 6. require express
+### 7. move data.js from frontend to backend
+### 8. create route for /api/products
+### 9. return products in data.js
+### 10. run npm start
